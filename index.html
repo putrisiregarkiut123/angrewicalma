@@ -3,122 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Perpustakaan Universitas Tarumanagara</title>
+    <title>Perpustakaan Universitas Tarumanagara</title>
     <style>
+        /* Latar belakang gradasi merah maroon ke biru muda */
         body {
-            background: linear-gradient(to bottom, #800000, #87CEEB); /* Latar belakang maroon bergradasi biru muda */
-            color: white;
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            background: linear-gradient(to bottom, #800000, #ADD8E6); /* Merah maroon ke biru muda */
+            color: white;
+            text-align: center;
         }
+
+        header {
+            padding: 2rem;
+            background-color: #800000; /* Merah maroon */
+            color: white; /* Warna teks header */
+        }
+
         h1 {
-            text-align: center;
+            margin: 0;
         }
-        p {
-            margin: 10px 0;
+
+        main {
+            padding: 2rem;
         }
-        .table-container {
-            background-color: #F5DEB3; /* Warna nude untuk tabel */
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
+
+        section {
+            margin-bottom: 3rem;
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
+
+        img {
+            width: 100%; /* Menyesuaikan dengan perangkat */
+            max-width: 600px; /* Maksimal lebar */
+            height: auto;
+            border-radius: 10px;
         }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: center;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
+
         iframe {
-            width: 100%;
+            width: 100%; /* Menyesuaikan dengan perangkat */
+            max-width: 600px; /* Maksimal lebar */
             height: 315px;
-            margin: 20px 0;
+            margin-top: 2rem;
+            border-radius: 10px;
         }
+
         audio {
-            display: block;
-            margin: 20px 0;
+            margin-top: 2rem;
+            width: 100%; /* Menyesuaikan dengan perangkat */
+            max-width: 600px; /* Maksimal lebar */
+        }
+
+        /* Tabel dengan latar belakang hijau army */
+        table {
+            width: 80%;
+            margin: 2rem auto;
+            border-collapse: collapse;
+            background-color: #4C8C4A; /* Warna latar belakang hijau army */
+            color: black; /* Warna teks di dalam tabel */
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #800000; /* Merah maroon */
+            padding: 1rem;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
 
-    <h1>Perpustakaan Universitas Tarumanagara</h1>
+    <header>
+        <h1>Perpustakaan Universitas Tarumanagara</h1>
+    </header>
 
-    <h2>Perkenalan</h2>
-    <p>Halo! perkenalkan saya Angrewi Calma. NIM saya, 222201036</p>
-    <p>Ini adalah homepage perpustakaan pertama saya.</p>
-    <p>Sebelumnya, saya mohon maaf atas kekurangan website ini, karena saya baru belajar mengenai langkah-langkah membuat website perpustakaan UNTAR. Dibawah ini ialah gambar dari gedung Perpustakaan UNTAR:</p>
+    <main>
+        <!-- Perkenalan -->
+        <section>
+            <h2>Perkenalan</h2>
+            <p>Halo! perkenalkan saya Angrewi Calma. NIM saya, 222201036</p>
+            <p>Ini adalah homepage perpustakaan pertama saya.</p>
+            <p>Sebelumnya, saya mohon maaf atas kekurangan website ini, karena saya baru belajar mengenai langkah-langkah membuat website perpustakaan UNTAR. Dibawah ini ialah gambar dari gedung Perpustakaan UNTAR</p>
+        </section>
 
-    <img src="URL_GAMBAR_PERPUSTAKAAN" alt="Gedung Perpustakaan Universitas Tarumanagara" style="width: 100%; height: auto; border-radius: 8px;">
+        <!-- Gambar Gedung Perpustakaan UNTAR -->
+        <section>
+            <h2>Gedung Perpustakaan UNTAR</h2>
+            <img src="https://www.untar.ac.id/assets/uploads/2019/07/gedunguntar.jpg" alt="Gedung Perpustakaan Universitas Tarumanagara">
+        </section>
 
-    <div class="table-container">
-        <h2>TABEL PEMINJAMAN BUKU</h2>
-        <table>
-            <tr>
-                <th>No.</th>
-                <th>Nama Buku</th>
-                <th>Peminjam</th>
-                <th>Tanggal Pinjam</th>
-                <th>Tanggal Kembali</th>
-            </tr>
-            <!-- Baris 1 -->
-            <tr>
-                <td>1</td>
-                <td>Buku A</td>
-                <td>Mahasiswa 1</td>
-                <td>01-01-2024</td>
-                <td>01-02-2024</td>
-            </tr>
-            <!-- Baris 2 -->
-            <tr>
-                <td>2</td>
-                <td>Buku B</td>
-                <td>Mahasiswa 2</td>
-                <td>02-01-2024</td>
-                <td>02-02-2024</td>
-            </tr>
-            <!-- Baris 3 -->
-            <tr>
-                <td>3</td>
-                <td>Buku C</td>
-                <td>Mahasiswa 3</td>
-                <td>03-01-2024</td>
-                <td>03-02-2024</td>
-            </tr>
-            <!-- Baris 4 -->
-            <tr>
-                <td>4</td>
-                <td>Buku D</td>
-                <td>Mahasiswa 4</td>
-                <td>04-01-2024</td>
-                <td>04-02-2024</td>
-            </tr>
-            <!-- Baris 5 -->
-            <tr>
-                <td>5</td>
-                <td>Buku E</td>
-                <td>Mahasiswa 5</td>
-                <td>05-01-2024</td>
-                <td>05-02-2024</td>
-            </tr>
-        </table>
-    </div>
+        <!-- Tabel Peminjaman Buku -->
+        <section>
+            <h2>TABEL PEMINJAMAN BUKU</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Judul Buku</th>
+                        <th>Nama Peminjam</th>
+                        <th>Tanggal Peminjaman</th>
+                        <th>Tanggal Pengembalian</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Algoritma dan Pemrograman</td>
+                        <td>Budi Santoso</td>
+                        <td>01 Oktober 2024</td>
+                        <td>08 Oktober 2024</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Pemrograman Web</td>
+                        <td>Sari Dewi</td>
+                        <td>02 Oktober 2024</td>
+                        <td>09 Oktober 2024</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Sistem Operasi</td>
+                        <td>Asep Pratama</td>
+                        <td>03 Oktober 2024</td>
+                        <td>10 Oktober 2024</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Jaringan Komputer</td>
+                        <td>Linda Sari</td>
+                        <td>04 Oktober 2024</td>
+                        <td>11 Oktober 2024</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Manajemen Data</td>
+                        <td>Agus Wijaya</td>
+                        <td>05 Oktober 2024</td>
+                        <td>12 Oktober 2024</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-    <h2>Video Profil Perpustakaan Universitas Tarumanagara</h2>
-    <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        <!-- Video Profil Perpustakaan UNTAR -->
+        <section>
+            <h2>Video Profil Perpustakaan Tarumanagara</h2>
+            <iframe src="https://www.youtube.com/embed/Q_tG92v0DPg" title="Video Profile Perpustakaan Tarumanagara" frameborder="0" allowfullscreen></iframe>
+        </section>
 
-    <h2>Lagu</h2>
-    <audio controls>
-        <source src="URL_AUDIO_SLIPPING_TO_MY_FINGER" type="audio/mpeg">
-        Your browser does not support the audio tag.
-    </audio>
+        <!-- Audio Lagu - Slipping Through My Fingers -->
+        <section>
+            <h2>Audio Lagu - Slipping Through My Fingers</h2>
+            <audio controls>
+                <source src="audio/slipping-through-my-fingers.mp3" type="audio/mp3">
+                Browser Anda tidak mendukung elemen audio.
+            </audio>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Perpustakaan Universitas Tarumanagara. Semua Hak Dilindungi.</p>
+    </footer>
 
 </body>
 </html>
