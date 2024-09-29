@@ -1,192 +1,177 @@
-<html>
+<!DOCTYPE html>
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE-edge"› <meta name-"viewport" content-"width-device-width, initial-scale-1.0"›
-‹title>Perpustakaan Universitas Airlangga‹/title>
-  <!-- css link --› ‹link rel="stylesheet"> <a href="style.css">/a></link>
-<title>Perpustakaan Angrewi Calma Depari</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan Universitas Tarumanagara</title>
+    <style>
+        /* Latar belakang gradasi biru muda ke merah maroon */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #ADD8E6, #800000); /* Biru muda ke merah maroon */
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            padding: 2rem;
+            background-color: #ADD8E6; /* Biru muda */
+            color: black; /* Warna teks header */
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        img {
+            width: 60%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        iframe {
+            width: 60%;
+            height: 315px;
+            margin-top: 2rem;
+            border-radius: 10px;
+        }
+
+        audio {
+            margin-top: 2rem;
+            width: 60%;
+        }
+
+        /* Tabel dengan latar belakang kuning */
+        table {
+            width: 80%;
+            margin: 2rem auto;
+            border-collapse: collapse;
+            background-color: yellow; /* Warna latar belakang tabel */
+            color: black; /* Warna teks di dalam tabel */
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #800000; /* Merah maroon */
+            padding: 1rem;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
-  <style>
-body {
-background-image: url(https://images.pexels.com/photos/17189400/pexels-photo-17189408/free-photo-of-
-background-repeat: no-repeat;
-background-size: 100% 100%;
-  background-attachment: fixed;
-}
 <body>
-  </style>
-<font color="black">
-<h1><center><u>Perpustakaan Angrewi Calma Depari</center></h1></u>
-<h-2>Selamat Datang di Web Perpustakaan Angrewi Calma Depari</h2>
-<p>Perkenalkan, nama saya Angrewi Calma Depari dengan 222201036. Ini adalah perpustakaan
-<i>homepage</i>
-<b>pertama</b> saya, karena saya baru belajar tentang cara membuat <b><i><a href=https://lib.unair.ac.id/wplib//> website perpustakaan UNAIR</a></i></b>.
-<h-3>Berikut ini adalah gambar dari gedung Perpustakaan UNAIR Surabaya.</h3>
-</p>
-<center><h-4><img src="https://library.unpad.ac.id/wp-content/uploads/2018/02/slide-profil-9.jpg" alt=/></h4>
-<p style="margin-bottom: 50px">
-<h-5><i>Perpustakaan UNAIR</i></h5></p>
-<video controls>
-<source src="images/Sweet - Cigarettes After Sex (Lyrics).mp4" type="video/mp4"></video></p>
-<p><h-6>SYSTEM OF A DOWN - RADIO/VIDEO</h6></p>
-<p style="margin-bottom: 50px">
-<video controls width="30%">
-<source src="images/System Of A Down Radio-Video.mp3" alt="audio/mpeg">
-</audio></p>
-  <p style="font-size: 25px"><b>Formulir Anggota Perpustakaan</b></p>
-<table border="1" style="margin-bottom: 50px">
-    <tr>
-    <th colspan="2">Formulir Anggota Perpustakaan Program Studi Perpustakaan dan Sains Informasi</th>
-    </tr>
-    <tr>
-        <td>Nama: </td>
-        <td><input type="text"/></td>
-    </tr>
-    <tr>
-        <td>NIM:</td>
-        <td><input type="password"/></td>
-    </tr>
-    <tr>
-        <td>Alamat:</td>
-        <td><input type="text"/></td>
-    </tr>
-    <tr>
-        <td>Jenis Kelamin:</td>
-        <td><input type="text"/></td>
-    </tr>
-    <tr>
-        <td>Email: </td>
-        <td><input type="text"/></td>
-    </tr>
-    <tr>
-        <td>No HP: </td>
-        <td><input type="number"/></td>
-    </tr>
-    <tr>
-        <td>Tempat Lahir: </td>
-        <td><input type="text"/></td>
-    </tr>
-    <tr>
-        <td>Tanggal Lahir: </td>
-        <td><input type="number"/></td>
-    </tr>
-    <tr>
-        <td><input type="submit" value="Submit"/></td>
-    </tr>
-</table></p>
-  <p style="font-size: 25px"><b>Tabel Bahan Buku</b></p>
-<table border="1" style="margin-bottom: 50px">
-    <tr>
-        <th>No.</th>
-        <th>Judul Buku</th>
-        <th>Pengarang</th>
-        <th>Penerbit</th>
-        <th>Tahun Terbit</th>
-        <th>Jumlah Halaman</th>
-        <th>ISBN</th>
-    </tr>
-</table>
-<form action="contact.php" method="POST">
-        <fieldset>
-        <legend>Formulir Pemesanan Buku</legend>
-        <p>
-            <label>Nama Lengkap:</label>
-            <input type="text" name="nama" placeholder="Nama lengkap" />
-        </p>
-        <p>
-            <label>Nomor Anggota Perpustakaan:</label>
-            <input type="number" name="Nomor anggota perpustakaan"/>
-        </p>
-        <p>
-            <label>Email:</label>
-            <input type="email" name="email" placeholder="@gmail.com" />
-        </p>
-        <p>
-            <label>Nomor Telepon:</label>
-            <input type="number" name="Nomor Telepon" placeholder="+62..." />
-        </p>
-        <p>
-            <label>Jenis kelamin:</label>
-            <label><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
-            <label><input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label>
-        </p>
-         <p>Detail Pemesanan</p>
-         <p>
-            <label>Judul Buku yang Dipesan</label>
-            <input type="text" name="Judul Buku"/>
-        </p>
-         <p>
-            <label>Penulis Buku</label>
-            <input type="text" name="Penulis Buku"/>
-        </p>
-         <p>
-            <label>Nomor ISBN</label>
-            <input type="number" name="Nomor ISBN"/>
-        </p>
-         <p>
-            <label>Judul Buku yang Dipesan</label>
-            <input type="text" name="Judul Buku"/>
-        </p>
-         <p>
-            <label>Tanggal Pemesanan</label>
-            <input type="date" name="Tanggal Pemesanan"/>
-        </p>
-        <p>
-            <input type="submit" name="submit" value="Daftar" />
-        </p>
-        </fieldset>
-    </form>
-    <form action="contact.php" method="POST">
-        <fieldset>
-        <legend>Formulir Perpanjangan Peminjaman Buku</legend>
-        <p>
-            <label>Nama Lengkap:</label>
-            <input type="text" name="nama" placeholder="Nama lengkap" />
-        </p>
-        <p>
-            <label>Nomor Anggota Perpustakaan:</label>
-            <input type="number" name="Nomor anggota perpustakaan"/>
-        </p>
-        <p>
-            <label>Email:</label>
-            <input type="email" name="email" placeholder="@gmail.com" />
-        </p>
-         <p>Detail Peminjaman Awal</p>
-         <p>
-            <label>Judul Buku yang Dipesan</label>
-            <input type="text" name="Judul Buku"/>
-        </p>
-         <p>
-            <label>Penulis Buku</label>
-            <input type="text" name="Penulis Buku"/>
-        </p>
-         <p>
-            <label>Nomor ISBN</label>
-            <input type="number" name="Nomor ISBN"/>
-        </p>
-         <p>
-            <label>Tanggal Peminjaman Buku</label>
-            <input type="date" name="Tanggal Peminjaman Buku"/>
-        </p>
-         <p>Detail Perpanjang Peminjaman Buku</p>
-        <p>
-            <label>Tanggal Perpanjang Peminjaman Buku</label>
-            <input type="date" name="Tanggal Perpanjang Peminjaman Buku"/>
-        </p>
-            <label>Alasan Perpanjangan</label>
-            <input type="text" name="Alasan Perpanjangan"/>
-        </p>
-        <p>
-            <input type="submit" name="submit" value="Kirim" />
-        </p>
-        </fieldset>
-    </form>
- <p style="margin-bottom: 50px"></p>
-  <p><b>About Us</b></p>
-<p><a href="https://wa.me/082274421618"><img src="https://logolook.net/wp-content/uploads/2021/06/Whatsapp-Logo.png"  controls width="7%" alt=/></a>
-<a href="https://instagram.com/gibraandlt?igshid=NTc4MTIwNjQ2YQ=="><img src="https://th.bing.com/th/id/R.03f40b67b63d9c1c1a5a792109bbc699?rik=8HhXk%2b5PP7XurQ&riu=http%3a%2f%2fpngimg.com%2fuploads%2finstagram%2finstagram_PNG10.png&ehk=%2f7%2ftghrL31GFpelB7DZvprao8IZHRvmhi0BpDsEAZgI%3d&risl=&pid=ImgRaw&r=0.png"  controls width="4%" alt=/></a>
-</p>
-<p style="margin-bottom: 50px"></p>
-</center>
+
+    <header>
+        <h1>Perpustakaan Universitas Tarumanagara</h1>
+    </header>
+
+    <main>
+        <!-- Perkenalan -->
+        <section>
+            <h2>Perkenalan</h2>
+            <p>Halo! perkenalkan saya Angrewi Calma. NIM saya, 222201036</p>
+            <p>Ini adalah homepage perpustakaan pertama saya.</p>
+            <p>Sebelumnya, saya mohon maaf atas kekurangan website ini, karena saya baru belajar mengenai langkah-langkah membuat website perpustakaan UNTAR. Dibawah ini ialah gambar dari gedung Perpustakaan UNTAR</p>
+        </section>
+
+        <!-- Gambar Gedung Perpustakaan UNTAR -->
+        <section>
+            <h2>Gedung Perpustakaan UNTAR</h2>
+            <img src="https://www.untar.ac.id/assets/uploads/2019/07/gedunguntar.jpg" alt="Gedung Perpustakaan Universitas Tarumanagara">
+        </section>
+
+        <!-- Tabel Peminjaman Buku -->
+        <section>
+            <h2>TABEL PEMINJAMAN BUKU</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Judul Buku</th>
+                        <th>Nama Peminjam</th>
+                        <th>Tanggal Peminjaman</th>
+                        <th>Tanggal Pengembalian</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Algoritma dan Pemrograman</td>
+                        <td>Budi Santoso</td>
+                        <td>01 Oktober 2024</td>
+                        <td>08 Oktober 2024</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Pemrograman Web</td>
+                        <td>Sari Dewi</td>
+                        <td>02 Oktober 2024</td>
+                        <td>09 Oktober 2024</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Sistem Operasi</td>
+                        <td>Asep Pratama</td>
+                        <td>03 Oktober 2024</td>
+                        <td>10 Oktober 2024</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Jaringan Komputer</td>
+                        <td>Linda Sari</td>
+                        <td>04 Oktober 2024</td>
+                        <td>11 Oktober 2024</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Manajemen Data</td>
+                        <td>Agus Wijaya</td>
+                        <td>05 Oktober 2024</td>
+                        <td>12 Oktober 2024</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Video Profil Perpustakaan UNTAR -->
+        <section>
+            <h2>Video Profil Perpustakaan Tarumanagara</h2>
+            <iframe src="https://www.youtube.com/embed/Q_tG92v0DPg" title="Video Profile Perpustakaan Tarumanagara" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <!-- Audio Lagu - Slipping Through My Fingers -->
+        <section>
+            <h2>Audio Lagu - Slipping Through My Fingers</h2>
+            <audio controls>
+                <source src="audio/slipping-through-my-fingers.mp3" type="audio/mp3">
+                Browser Anda tidak mendukung elemen audio.
+            </audio>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Perpustakaan Universitas Tarumanagara. Semua Hak Dilindungi.</p>
+    </footer>
+
 </body>
 </html>
