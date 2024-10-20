@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perpustakaan Universitas Tarumanagara</title>
+    <title>Blog Perpustakaan UNTAR</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,15 +12,10 @@
             padding: 0;
         }
 
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 20px;
-        }
-
         nav {
             background-color: #333;
             overflow: hidden;
+            margin-bottom: 20px;
         }
 
         nav a {
@@ -36,7 +31,7 @@
             color: black;
         }
 
-        h1, h2 {
+        h1, h2, h3 {
             color: darkblue;
         }
 
@@ -45,21 +40,21 @@
         }
 
         table {
-            border-collapse: collapse;
             width: 100%;
             margin-bottom: 50px;
             background-color: lightgreen;
+            border-collapse: collapse;
         }
 
         th, td {
-            padding: 10px;
             border: 1px solid black;
+            padding: 10px;
             text-align: left;
             text-transform: uppercase;
         }
 
         th {
-            background-color: lightgreen;
+            background-color: #d9f9d9;
         }
 
         form input, form label {
@@ -67,16 +62,21 @@
             margin: 10px 0;
         }
 
-        .video, .audio {
+        .form-section {
             margin: 20px 0;
-        }
-
-        .audio iframe, .video iframe {
-            width: 100%;
         }
 
         .submit-button {
             margin-top: 20px;
+        }
+
+        .video, .audio {
+            margin: 20px 0;
+        }
+
+        .video iframe, .audio iframe {
+            width: 100%;
+            height: 400px;
         }
     </style>
 </head>
@@ -84,177 +84,171 @@
 
     <nav>
         <a href="#home">Home</a>
-        <a href="#html-css">Pengertian HTML dan CSS</a>
+        <a href="#html-css">HTML dan CSS</a>
         <a href="#form-anggota">Formulir Anggota</a>
         <a href="#bahan-buku">Tabel Bahan Buku</a>
         <a href="#pemesanan-buku">Pemesanan Buku</a>
         <a href="#perpanjangan-buku">Perpanjangan Buku</a>
     </nav>
 
-    <div class="container">
-        <!-- Home Section -->
-        <section id="home">
-            <h1>Perpustakaan Universitas Tarumanagara</h1>
-            <h2>Perkenalan</h2>
-            <p>Halo! perkenalkan saya Angrewi Calma. NIM saya, 222201036. Ini adalah homepage perpustakaan pertama saya. Sebelumnya, saya berterima kasih dan juga mohon maaf mengenai website ini, karena saya baru belajar mengenai langkah-langkah membuat website. Berikut ialah website perpustakaan UNTAR. Dibawah ini ialah gambar dari gedung Perpustakaan UNTAR:</p>
-            
-            <!-- Gambar Gedung -->
-            <img src="https://example.com/gambar-perpustakaan.jpg" alt="Gedung Perpustakaan UNTAR" width="600">
-            <img src="https://example.com/gambar-perpustakaan2.jpg" alt="Gedung Perpustakaan UNTAR" width="600">
-            
-            <!-- Formulir Anggota Perpustakaan -->
-            <h2>Formulir Anggota Perpustakaan</h2>
-            <table>
-                <tr>
-                    <th>Nama</th>
-                    <td><input type="text"></td>
-                </tr>
-                <tr>
-                    <th>NIM</th>
-                    <td><input type="text"></td>
-                </tr>
-                <tr>
-                    <th>Alamat</th>
-                    <td><input type="text"></td>
-                </tr>
-                <tr>
-                    <th>Jenis Kelamin</th>
-                    <td><input type="text"></td>
-                </tr>
-                <tr>
-                    <th>Email</th>
-                    <td><input type="email"></td>
-                </tr>
-                <tr>
-                    <th>Nomor HP</th>
-                    <td><input type="text"></td>
-                </tr>
-                <tr>
-                    <th>Tempat Lahir</th>
-                    <td><input type="text"></td>
-                </tr>
-                <tr>
-                    <th>Tanggal Lahir</th>
-                    <td><input type="date"></td>
-                </tr>
-            </table>
-            <button class="submit-button">Submit</button>
+    <section id="home">
+        <h1>Perpustakaan Universitas Tarumanagara</h1>
+        <h2>Perkenalan</h2>
+        <p>Halo! Perkenalkan saya Angrewi Calma, NIM 222201036. Ini adalah homepage perpustakaan pertama saya. Sebelumnya, saya berterima kasih dan juga mohon maaf mengenai website ini, karena saya baru belajar mengenai langkah-langkah membuat website. Berikut adalah website perpustakaan UNTAR. Di bawah ini adalah gambar dari gedung Perpustakaan UNTAR:</p>
 
-            <!-- Tabel Bahan Buku -->
-            <h2>Tabel Bahan Buku</h2>
-            <table>
-                <tr>
-                    <th>Nomor</th>
-                    <th>Judul Buku</th>
-                    <th>Pengarang</th>
-                    <th>Penerbit</th>
-                    <th>Tahun Terbit</th>
-                    <th>Jumlah Halaman</th>
-                    <th>ISBN</th>
-                </tr>
-                <!-- Tambahkan data buku sesuai kebutuhan -->
-            </table>
+        <img src="https://images.app.goo.gl/7Uc2yUG699J63AJB6" alt="Gedung Perpustakaan UNTAR" width="500">
+        <img src="https://images.app.goo.gl/KxHSmmpFbmQzSTLY8" alt="Gedung Perpustakaan UNTAR" width="500">
+<h2>Gambar Gedung Perpustakaan UNTAR</h2>
+<img src="https://images.app.goo.gl/7Uc2yUG699J63AJB6" alt="Gedung Perpustakaan UNTAR" width="600">
 
-            <!-- Formulir Pemesanan Buku -->
-            <h2>Formulir Pemesanan Buku</h2>
-            <table>
-                <tr>
-                    <th>Nama Lengkap</th>
-                    <td><input type="text"></td>
-                </tr>
-                <tr>
-                    <th>Nomor Anggota Perpustakaan</th>
-                    <td><input type="text"></td>
-                </tr>
-                <tr>
-                    <th>Email</th>
-                    <td><input type="email"></td>
-                </tr>
-                <tr>
-                    <th>Nomor Telepon</th>
-                    <td><input type="text"></td>
-                </tr>
-                <tr>
-                    <th>Judul Buku yang Dipesan</th>
-                    <td><input type="text"></td>
-                </tr>
-                <tr>
-                    <th>Penulis Buku</th>
-                    <td><input type="text"></td>
-                </tr>
-                <tr>
-                    <th>Nomor ISBN</th>
-                    <td><input type="text"></td>
-                </tr>
-                <tr>
-                    <th>Tanggal Pemesanan</th>
-                    <td><input type="date"></td>
-                </tr>
-            </table>
-            <button class="submit-button">Daftar</button>
+        <h3>Formulir Anggota Perpustakaan</h3>
+        <table>
+            <tr>
+                <th>Nama</th>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <th>NIM</th>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <th>Alamat</th>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <th>Jenis Kelamin</th>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <th>Nomor HP</th>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <th>Tempat Lahir</th>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <th>Tanggal Lahir</th>
+                <td><input type="date"></td>
+            </tr>
+        </table>
+        <button class="submit-button">Submit</button>
 
-            <!-- Formulir Perpanjangan Peminjaman Buku -->
-            <h2>Formulir Perpanjangan Peminjaman Buku</h2>
-            <table>
-                <tr>
-                    <th>Nama Lengkap</th>
-                    <td><input type="text"></td>
-                </tr>
-                <tr>
-                    <th>Nomor Anggota Perpustakaan</th>
-                    <td><input type="text"></td>
-                </tr>
-                <tr>
-                    <th>Email</th>
-                    <td><input type="email"></td>
-                </tr>
-                <tr>
-                    <th>Judul Buku yang Dipesan</th>
-                    <td><input type="text"></td>
-                </tr>
-                <tr>
-                    <th>Penulis Buku</th>
-                    <td><input type="text"></td>
-                </tr>
-                <tr>
-                    <th>Nomor ISBN</th>
-                    <td><input type="text"></td>
-                </tr>
-                <tr>
-                    <th>Tanggal Peminjaman Buku</th>
-                    <td><input type="date"></td>
-                </tr>
-                <tr>
-                    <th>Tanggal Perpanjang Peminjaman Buku</th>
-                    <td><input type="date"></td>
-                </tr>
-                <tr>
-                    <th>Alasan Perpanjangan</th>
-                    <td><input type="text"></td>
-                </tr>
-            </table>
-            <button class="submit-button">Submit</button>
+        <h3>Tabel Bahan Buku</h3>
+        <table>
+            <tr>
+                <th>Nomor</th>
+                <th>Judul Buku</th>
+                <th>Pengarang</th>
+                <th>Penerbit</th>
+                <th>Tahun Terbit</th>
+                <th>Jumlah Halaman</th>
+                <th>ISBN</th>
+            </tr>
+            <!-- Tambahkan data buku sesuai kebutuhan -->
+        </table>
 
-            <!-- Lampiran Video -->
-            <div class="video">
-                <h2>Lampiran Video</h2>
-                <iframe src="https://www.youtube.com/embed/g9-Mb9u7_YI?si=XU6FaWfBMe-6Q_61" frameborder="0"></iframe>
-            </div>
+        <h3>Formulir Pemesanan Buku</h3>
+        <table>
+            <tr>
+                <th>Nama Lengkap</th>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <th>Nomor Anggota Perpustakaan</th>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <th>Nomor Telepon</th>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <th>Judul Buku yang Dipesan</th>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <th>Penulis Buku</th>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <th>Nomor ISBN</th>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <th>Tanggal Pemesanan</th>
+                <td><input type="date"></td>
+            </tr>
+        </table>
+        <button class="submit-button">Daftar</button>
 
-            <!-- Audio -->
-            <div class="audio">
-                <h2>Audio Voice On</h2>
-                <iframe src="https://music.apple.com/id/album/slipping-through-my-fingers/1713994749?i=1713994980" frameborder="0"></iframe>
-            </div>
-        </section>
+        <h3>Formulir Perpanjangan Peminjaman Buku</h3>
+        <table>
+            <tr>
+                <th>Nama Lengkap</th>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <th>Nomor Anggota Perpustakaan</th>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <th>Judul Buku</th>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <th>Penulis Buku</th>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <th>Nomor ISBN</th>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <th>Tanggal Peminjaman Buku</th>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <th>Tanggal Perpanjang</th>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <th>Alasan Perpanjangan</th>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+        <button class="submit-button">Submit</button>
 
-        <!-- HTML and CSS Section -->
-        <section id="html-css">
-            <h2>Pengertian HTML dan CSS</h2>
-            <p>HTML (HyperText Markup Language) adalah bahasa markup standar yang digunakan untuk membuat halaman web. HTML digunakan untuk menyusun dan menampilkan konten di web, seperti teks, gambar, tabel, tautan, dan elemen-elemen lainnya. HTML menentukan struktur sebuah halaman web dengan menggunakan elemen-elemen yang disebut tags (misalnya <p> untuk paragraf, <a> untuk tautan, dan <img> untuk gambar).
+        <!-- Lampiran Video -->
+        <h3>Lampiran Video</h3>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/g9-Mb9u7_YI?si=XU6FaWfBMe-6Q_61" frameborder="0" allowfullscreen></iframe>
+        </div>
 
-<p> HTML: Digunakan untuk membuat struktur konten.
+        <!-- Audio -->
+        <h3>Audio Voice On</h3>
+        <div class="audio">
+            <iframe src="https://music.apple.com/id/album/slipping-through-my-fingers/1713994749?i=1713994980" frameborder="0"></iframe>
+        </div>
+    </section>
 
-<p> CSS (Cascading Style Sheets) adalah bahasa yang digunakan untuk mengatur tampilan dan tata letak elemen-elemen HTML di halaman web. Dengan CSS, kita bisa mengontrol warna, ukuran, margin, padding, font, dan banyak aspek lain dari tampilan suatu halaman web. CSS memungkinkan pemisahan antara struktur (HTML) dan desain, sehingga kode lebih mudah dipelihara dan dapat digunakan kembali di banyak halaman.
+    <section id="html-css">
+        <h2>Pengertian HTML dan CSS</h2>
+        <p>HTML (HyperText Markup Language) adalah bahasa markup standar yang digunakan untuk membuat halaman web. HTML digunakan untuk menyusun dan menampilkan konten di web, seperti teks, gambar, tabel, tautan, dan elemen-elemen lainnya. HTML menentukan struktur sebuah halaman web dengan menggunakan elemen-elemen yang disebut tags.</p>
 
-<p> CSS: Digunakan untuk mendesain dan mengatur tampilan konten.
+        <p>CSS (Cascading Style Sheets) adalah bahasa yang digunakan untuk mengatur tampilan dan tata letak elemen-elemen HTML di halaman web. Dengan CSS, kita bisa mengontrol warna, ukuran, margin, padding, font, dan banyak aspek lain dari tampilan suatu halaman web.</p>
+    </section>
+
+</body>
+</html>
