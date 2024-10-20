@@ -48,19 +48,21 @@
             border-collapse: collapse;
             width: 100%;
             margin-bottom: 50px;
+            background-color: lightgreen;
         }
 
         th, td {
             padding: 10px;
             border: 1px solid black;
             text-align: left;
+            text-transform: uppercase;
         }
 
         th {
             background-color: lightgreen;
         }
 
-        form input, form label, form textarea {
+        form input, form label {
             display: block;
             margin: 10px 0;
         }
@@ -77,6 +79,10 @@
             padding: 10px;
             border: 1px solid #333;
             margin-bottom: 20px;
+        }
+
+        .submit-button {
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -100,35 +106,136 @@
             
             <!-- Formulir Anggota Perpustakaan -->
             <h2>Formulir Anggota Perpustakaan</h2>
-            <table border="1">
+            <table>
                 <tr>
-                    <th colspan="2">Formulir Anggota Perpustakaan Program Studi Perpustakaan dan Sains Informasi</th>
+                    <th>Nama</th>
+                    <td><input type="text"></td>
                 </tr>
                 <tr>
-                    <td>Nama:</td>
-                    <td><input type="text" /></td>
+                    <th>NIM</th>
+                    <td><input type="text"></td>
                 </tr>
                 <tr>
-                    <td>NIM:</td>
-                    <td><input type="password" /></td>
+                    <th>Alamat</th>
+                    <td><input type="text"></td>
                 </tr>
-                <!-- Add more rows as needed -->
+                <tr>
+                    <th>Jenis Kelamin</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td><input type="email"></td>
+                </tr>
+                <tr>
+                    <th>Nomor HP</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Tempat Lahir</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Tanggal Lahir</th>
+                    <td><input type="text"></td>
+                </tr>
+            </table>
+            <button class="submit-button">Submit</button>
+
+            <!-- Tabel Bahan Buku -->
+            <h2>Tabel Bahan Buku</h2>
+            <table>
+                <tr>
+                    <th>Nomor</th>
+                    <th>Judul Buku</th>
+                    <th>Pengarang</th>
+                    <th>Penerbit</th>
+                    <th>Tahun Terbit</th>
+                    <th>Jumlah Halaman</th>
+                    <th>ISBN</th>
+                </tr>
+                <!-- Tambahkan data buku sesuai kebutuhan -->
             </table>
 
             <!-- Formulir Pemesanan Buku -->
-            <div class="form-container">
-                <form action="contact.php" method="POST">
-                    <fieldset>
-                        <legend>Formulir Pemesanan Buku</legend>
-                        <label>Nama Lengkap:</label>
-                        <input type="text" name="nama" placeholder="Nama lengkap">
-                        <label>Nomor Anggota Perpustakaan:</label>
-                        <input type="number" name="Nomor anggota perpustakaan">
-                        <!-- More fields... -->
-                        <input type="submit" value="Daftar">
-                    </fieldset>
-                </form>
-            </div>
+            <h2>Formulir Pemesanan Buku</h2>
+            <table>
+                <tr>
+                    <th>Nama Lengkap</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Nomor Anggota Perpustakaan</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td><input type="email"></td>
+                </tr>
+                <tr>
+                    <th>Nomor Telepon</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Judul Buku yang Dipesan</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Penulis Buku</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Nomor ISBN</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Tanggal Pemesanan</th>
+                    <td><input type="date"></td>
+                </tr>
+            </table>
+            <button class="submit-button">Daftar</button>
+
+            <!-- Formulir Perpanjangan Peminjaman Buku -->
+            <h2>Formulir Perpanjangan Peminjaman Buku</h2>
+            <table>
+                <tr>
+                    <th>Nama Lengkap</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Nomor Anggota Perpustakaan</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td><input type="email"></td>
+                </tr>
+                <tr>
+                    <th>Judul Buku yang Dipesan</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Penulis Buku</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Nomor ISBN</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Tanggal Peminjaman Buku</th>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <th>Tanggal Perpanjang Peminjaman Buku</th>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <th>Alasan Perpanjangan</th>
+                    <td><input type="text"></td>
+                </tr>
+            </table>
+            <button class="submit-button">Submit</button>
 
             <!-- Lampiran Video -->
             <div class="video">
@@ -146,10 +253,5 @@
         <!-- HTML and CSS Section -->
         <section id="html-css">
             <h2>Pengertian HTML dan CSS</h2>
-            <p>HTML (HyperText Markup Language) adalah bahasa markup standar yang digunakan untuk membuat halaman web...</p>
-            <p>CSS (Cascading Style Sheets) adalah bahasa yang digunakan untuk mengatur tampilan dan tata letak elemen-elemen HTML...</p>
-        </section>
-    </div>
-
-</body>
-</html>
+            <p>HTML (HyperText Markup Language) adalah bahasa markup standar yang digunakan untuk membuat halaman web. HTML digunakan untuk menyusun dan menampilkan konten di web, seperti teks, gambar, tabel, tautan, dan elemen-elemen lainnya. HTML menentukan struktur sebuah halaman web dengan menggunakan elemen-elemen yang disebut tags (misalnya <code>&lt;p&gt;</code> untuk paragraf, <code>&lt;a&gt;</code> untuk tautan, dan <code>&lt;img&gt;</code> untuk gambar).</p>
+            <p>CSS (Cascading Style Sheets) adalah bahasa yang digunakan untuk mengatur tampilan
