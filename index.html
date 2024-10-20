@@ -3,178 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perpustakaan Universitas Tarumanagara</title>
+    <title>Blog Perpustakaan UNTAR</title>
     <style>
-        /* Latar belakang gradasi merah maroon ke biru muda */
+        /* Background gradient */
         body {
+            background: linear-gradient(maroon, lightblue);
             font-family: Arial, sans-serif;
-            margin: 0;
+            color: #333;
+        }
+        /* Navbar styling */
+        nav ul {
+            list-style-type: none;
             padding: 0;
-            background: linear-gradient(to bottom, #800000, #ADD8E6); /* Merah maroon ke biru muda */
-            color: white;
-            text-align: center;
-        }
-
-        header {
-            padding: 2rem;
-            background-color: #800000; /* Merah maroon */
-        }
-
-        h1 {
             margin: 0;
-        }
-
-        main {
-            padding: 2rem;
-        }
-
-        section {
-            margin-bottom: 3rem;
-        }
-
-        img {
-            width: 100%; /* Menyesuaikan dengan perangkat */
-            max-width: 600px; /* Maksimal lebar */
-            height: auto;
-            border-radius: 10px;
-        }
-
-        iframe {
-            width: 100%; /* Menyesuaikan dengan perangkat */
-            max-width: 600px; /* Maksimal lebar */
-            height: 315px;
-            margin-top: 2rem;
-            border-radius: 10px;
-        }
-
-        audio {
-            margin-top: 2rem;
-            width: 100%; /* Menyesuaikan dengan perangkat */
-            max-width: 600px; /* Maksimal lebar */
-        }
-
-        /* Tabel dengan latar belakang hijau army */
-        table {
-            width: 80%;
-            margin: 2rem auto;
-            border-collapse: collapse;
-            background-color: #4C8C4A; /* Warna latar belakang hijau army */
-            color: black; /* Warna teks di dalam tabel */
-        }
-
-        table, th, td {
-            border: 1px solid black;
-        }
-
-        th, td {
-            padding: 10px;
+            background-color: maroon;
             text-align: center;
         }
-
-        footer {
-            background-color: #800000; /* Merah maroon */
-            padding: 1rem;
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav ul li a {
             color: white;
-            position: relative;
-            bottom: 0;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        h1, h2 {
+            color: #fff;
+        }
+        /* Table styling */
+        table {
             width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #000;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #556B2F; /* Army green */
+            color: white;
+        }
+        /* Form styling */
+        input[type="text"], input[type="password"], input[type="number"], input[type="email"], input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+        }
+        input[type="submit"] {
+            background-color: maroon;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: darkred;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Perpustakaan Universitas Tarumanagara</h1>
-    </header>
+<!-- Navigation Menu -->
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#pengertian">Pengertian HTML dan CSS</a></li>
+    </ul>
+</nav>
 
-    <main>
-        <!-- Perkenalan -->
-        <section>
-            <h2>Perkenalan</h2>
-            <p>Halo! perkenalkan saya Angrewi Calma. NIM saya, 222201036</p>
-            <p>Ini adalah homepage perpustakaan pertama saya.</p>
-            <p>Sebelumnya, saya mohon maaf atas kekurangan website ini, karena saya baru belajar mengenai langkah-langkah membuat website perpustakaan UNTAR. Dibawah ini ialah gambar dari gedung Perpustakaan UNTAR</p>
-        </section>
+<!-- Home Section -->
+<section id="home">
+    <h1>Perpustakaan Universitas Tarumanagara</h1>
+    <h2>Perkenalan</h2>
+    <p>Halo! perkenalkan saya Angrewi Calma. NIM saya, 222201036</p>
+    <p>Ini adalah homepage perpustakaan pertama saya.</p>
+    <p>Sebelumnya, saya mohon maaf atas kekurangan website ini, karena saya baru belajar mengenai langkah-langkah membuat website perpustakaan UNTAR. Di bawah ini ialah gambar dari gedung Perpustakaan UNTAR.</p>
+    
+    <!-- Images -->
+    <img src="https://images.app.goo.gl/7Uc2yUG699J63AJB6" alt="Gedung Perpustakaan UNTAR" width="300">
+    <img src="https://images.app.goo.gl/KxHSmmpFbmQzSTLY8" alt="Gedung Perpustakaan UNTAR 2" width="300">
+    
+    <!-- Formulir -->
+    <h2>Formulir Anggota Perpustakaan</h2>
+    <table>
+        <tr>
+            <th colspan="2">Formulir Anggota Perpustakaan Program Studi Perpustakaan dan Sains Informasi</th>
+        </tr>
+        <tr>
+            <td>Nama:</td>
+            <td><input type="text"/></td>
+        </tr>
+        <tr>
+            <td>NIM:</td>
+            <td><input type="password"/></td>
+        </tr>
+        <tr>
+            <td>Alamat:</td>
+            <td><input type="text"/></td>
+        </tr>
+        <tr>
+            <td>Jenis Kelamin:</td>
+            <td><input type="text"/></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="text"/></td>
+        </tr>
+        <tr>
+            <td>No HP:</td>
+            <td><input type="number"/></td>
+        </tr>
+        <tr>
+            <td>Tempat Lahir:</td>
+            <td><input type="text"/></td>
+        </tr>
+        <tr>
+            <td>Tanggal Lahir:</td>
+            <td><input type="number"/></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="Submit"/></td>
+        </tr>
+    </table>
+    
+    <!-- Tabel Bahan Buku -->
+    <h2>Tabel Bahan Buku</h2>
+    <table>
+        <tr>
+            <th>No.</th>
+            <th>Judul Buku</th>
+            <th>Pengarang</th>
+            <th>Penerbit</th>
+            <th>Tahun Terbit</th>
+            <th>Jumlah Halaman</th>
+            <th>ISBN</th>
+        </tr>
+        <!-- Tabel akan diisi data buku -->
+    </table>
+    
+    <!-- Lampiran Video -->
+    <h2>Lampiran Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/g9-Mb9u7_YI" title="YouTube video" frameborder="0" allowfullscreen></iframe>
 
-        <!-- Gambar Gedung Perpustakaan UNTAR -->
-        <section>
-            <h2>Gedung Perpustakaan UNTAR</h2>
-            <img src="https://images.app.goo.gl/7Uc2yUG699J63AJB6" alt="Gedung Perpustakaan Universitas Tarumanagara">
-            <img src="https://images.app.goo.gl/KxHSmmpFbmQzSTLY8" alt="Gedung Perpustakaan Universitas Tarumanagara">
-        </section>
+    <!-- Lampiran Audio -->
+    <h2>Lampiran Audio</h2>
+    <audio controls>
+        <source src="https://music.apple.com/id/album/slipping-through-my-fingers/1713994749?i=1713994980" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+</section>
 
-        <!-- Tabel Peminjaman Buku -->
-        <section>
-            <h2>TABEL PEMINJAMAN BUKU</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>No</th>
-                        <th>Judul Buku</th>
-                        <th>Nama Peminjam</th>
-                        <th>Tanggal Peminjaman</th>
-                        <th>Tanggal Pengembalian</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Algoritma dan Pemrograman</td>
-                        <td>Budi Santoso</td>
-                        <td>01 Oktober 2024</td>
-                        <td>08 Oktober 2024</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Pemrograman Web</td>
-                        <td>Sari Dewi</td>
-                        <td>02 Oktober 2024</td>
-                        <td>09 Oktober 2024</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Sistem Operasi</td>
-                        <td>Asep Pratama</td>
-                        <td>03 Oktober 2024</td>
-                        <td>10 Oktober 2024</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Jaringan Komputer</td>
-                        <td>Linda Sari</td>
-                        <td>04 Oktober 2024</td>
-                        <td>11 Oktober 2024</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Manajemen Data</td>
-                        <td>Agus Wijaya</td>
-                        <td>05 Oktober 2024</td>
-                        <td>12 Oktober 2024</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <!-- Video Profil Perpustakaan UNTAR -->
-        <section>
-            <h2>Video Profil Perpustakaan Tarumanagara</h2>
-            <iframe src="https://www.youtube.com/embed/g9-Mb9u7_YI" title="Video Profil Perpustakaan Tarumanagara" frameborder="0" allowfullscreen></iframe>
-        </section>
-
-        <!-- Audio Lagu - Slipping Through My Fingers -->
-        <section>
-            <h2>Audio Lagu - Slipping Through My Fingers</h2>
-            <audio controls>
-                <source src="https://music.apple.com/id/album/slipping-through-my-fingers/1713994749?i=1713994980" type="audio/mpeg">
-                Browser Anda tidak mendukung elemen audio.
-            </audio>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Perpustakaan Universitas Tarumanagara. Semua Hak Dilindungi.</p>
-    </footer>
+<!-- Pengertian HTML dan CSS Section -->
+<section id="pengertian">
+    <h1>Pengertian HTML dan CSS</h1>
+    <p>HTML (HyperText Markup Language) adalah bahasa markup standar yang digunakan untuk membuat halaman web. HTML digunakan untuk menyusun dan menampilkan konten di web, seperti teks, gambar, tabel, tautan, dan elemen-elemen lainnya. HTML menentukan struktur sebuah halaman web dengan menggunakan elemen-elemen yang disebut tags (misalnya &lt;p&gt; untuk paragraf, &lt;a&gt; untuk tautan, dan &lt;img&gt; untuk gambar).</p>
+    <p>Singkatnya:</p>
+    <p>HTML: Digunakan untuk membuat struktur konten.</p>
+    
+    <p>CSS (Cascading Style Sheets) adalah bahasa yang digunakan untuk mengatur tampilan dan tata letak elemen-elemen HTML di halaman web. Dengan CSS, kita bisa mengontrol warna, ukuran, margin, padding, font, dan banyak aspek lain dari tampilan suatu halaman web. CSS memungkinkan pemisahan antara struktur (HTML) dan desain, sehingga kode lebih mudah dipelihara dan dapat digunakan kembali di banyak halaman.</p>
+    <p>Singkatnya:</p>
+    <p>CSS: Digunakan untuk mendesain dan mengatur tampilan konten.</p>
+</section>
 
 </body>
 </html>
