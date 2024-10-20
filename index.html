@@ -91,6 +91,10 @@
     <nav>
         <a href="#home">Home</a>
         <a href="#html-css">Pengertian HTML dan CSS</a>
+        <a href="#form-anggota">Formulir Anggota Perpustakaan</a>
+        <a href="#tabel-buku">Tabel Bahan Buku</a>
+        <a href="#form-pemesanan">Formulir Pemesanan Buku</a>
+        <a href="#form-perpanjangan">Formulir Perpanjangan Buku</a>
     </nav>
 
     <div class="container">
@@ -98,7 +102,128 @@
         <section id="home">
             <h1>Perpustakaan Universitas Tarumanagara</h1>
             <h2>Perkenalan</h2>
-            <p>Halo! perkenalkan saya Angrewi Calma. NIM saya, 222201036. Ini adalah homepage perpustakaan pertama saya. Sebelumnya, saya mohon maaf atas kekurangan website ini, karena saya baru belajar mengenai langkah-langkah membuat website perpustakaan UNTAR. Dibawah ini ialah gambar dari gedung Perpustakaan UNTAR:</p>
+            <p>Halo! perkenalkan saya Angrewi Calma. NIM saya, 222201036. Ini adalah homepage perpustakaan pertama saya. Sebelumnya, saya berterima kasih dan juga mohon maaf mengenai website ini, karena saya baru belajar mengenai langkah-langkah membuat website. Berikut ialah website perpustakaan UNTAR. Dibawah ini ialah gambar dari gedung Perpustakaan UNTAR:</p>
+            
+            <!-- Gambar Gedung -->
+            <img src="https://images.app.goo.gl/7Uc2yUG699J63AJB6" alt="Gedung Perpustakaan UNTAR" style="width: 100%; height: auto;">
+            <img src="https://images.app.goo.gl/KxHSmmpFbmQzSTLY8" alt="Gedung Perpustakaan UNTAR" style="width: 100%; height: auto;">
+            
+            <!-- Formulir Anggota Perpustakaan -->
+            <h2>Formulir Anggota Perpustakaan</h2>
+            <table>
+                <tr>
+                    <th>Nama</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>NIM</th>
+                    <td><
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan UNTAR</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, lightblue, pink, lightorange);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        h1, h2 {
+            color: darkblue;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 50px;
+            background-color: lightgreen;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+            text-align: left;
+            text-transform: uppercase;
+        }
+
+        th {
+            background-color: lightgreen;
+        }
+
+        form input, form label {
+            display: block;
+            margin: 10px 0;
+        }
+
+        .video, .audio {
+            margin: 20px 0;
+        }
+
+        .audio iframe, .video iframe {
+            width: 100%;
+        }
+
+        .form-container fieldset {
+            padding: 10px;
+            border: 1px solid #333;
+            margin-bottom: 20px;
+        }
+
+        .submit-button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#html-css">Pengertian HTML dan CSS</a>
+        <a href="#form-anggota">Formulir Anggota</a>
+        <a href="#bahan-buku">Tabel Bahan Buku</a>
+        <a href="#pemesanan-buku">Pemesanan Buku</a>
+        <a href="#perpanjangan-buku">Perpanjangan Buku</a>
+    </nav>
+
+    <div class="container">
+        <!-- Home Section -->
+        <section id="home">
+            <h1>Perpustakaan Universitas Tarumanagara</h1>
+            <h2>Perkenalan</h2>
+            <p>Halo! perkenalkan saya Angrewi Calma. NIM saya, 222201036. Ini adalah homepage perpustakaan pertama saya. Sebelumnya, saya berterima kasih dan juga mohon maaf mengenai website ini, karena saya baru belajar mengenai langkah-langkah membuat website. Berikut ialah website perpustakaan UNTAR. Dibawah ini ialah gambar dari gedung Perpustakaan UNTAR:</p>
             
             <!-- Gambar Gedung -->
             <img src="https://images.app.goo.gl/7Uc2yUG699J63AJB6" alt="Gedung Perpustakaan UNTAR" style="width: 100%; height: auto;">
@@ -253,5 +378,10 @@
         <!-- HTML and CSS Section -->
         <section id="html-css">
             <h2>Pengertian HTML dan CSS</h2>
-            <p>HTML (HyperText Markup Language) adalah bahasa markup standar yang digunakan untuk membuat halaman web. HTML digunakan untuk menyusun dan menampilkan konten di web, seperti teks, gambar, tabel, tautan, dan elemen-elemen lainnya. HTML menentukan struktur sebuah halaman web dengan menggunakan elemen-elemen yang disebut tags (misalnya <code>&lt;p&gt;</code> untuk paragraf, <code>&lt;a&gt;</code> untuk tautan, dan <code>&lt;img&gt;</code> untuk gambar).</p>
-            <p>CSS (Cascading Style Sheets) adalah bahasa yang digunakan untuk mengatur tampilan
+            <p>HTML (HyperText Markup Language) adalah bahasa markup standar yang digunakan untuk membuat halaman web. HTML digunakan untuk menyusun dan menampilkan konten di web, seperti teks, gambar, tabel, tautan, dan elemen-elemen lainnya. HTML menentukan struktur sebuah halaman web dengan menggunakan elemen-elemen yang disebut tags (misalnya <p> untuk paragraf, <a> untuk tautan, dan <img> untuk gambar).
+
+HTML: Digunakan untuk membuat struktur konten.
+
+CSS (Cascading Style Sheets) adalah bahasa yang digunakan untuk mengatur tampilan dan tata letak elemen-elemen HTML di halaman web. Dengan CSS, kita bisa mengontrol warna, ukuran, margin, padding, font, dan banyak aspek lain dari tampilan suatu halaman web. CSS memungkinkan pemisahan antara struktur (HTML) dan desain, sehingga kode lebih mudah dipelihara dan dapat digunakan kembali di banyak halaman.
+
+CSS: Digunakan untuk mendesain dan mengatur tampilan konten.
